@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %} TV Series Rating Heatmap {% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+    <h1 class="text-center text-uppercase">{{ title }}</h1>
+
+    <div class="row mt-4">
+        <div class="col-lg-6">
+            <div class="row ">
+                <div class="col-lg-2 text-center">
+                    <i class="fa fa-thumbs-up fa-4x text-center"></i>
+                </div>
+                <div class="col-lg-8">
+                    <div class="alert alert-success" role="alert">
+                        <strong>Best Episode</strong>
+                        <p style="margin-bottom: 0">{{ best_ep_num |safe }} : {{ best_ep_name |safe }} </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="row ">
+                <div class="col-lg-2 col-lg-offset-1 text-center">
+                    <i class="fa fa-thumbs-down fa-4x text-center"></i>
+                </div>
+                <div class="col-lg-8">
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Worst Episode</strong>
+                        <p style="margin-bottom: 0">{{ worst_ep_num |safe }} : {{ worst_ep_name |safe }} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Heatmap</h2>
+    <div class="border-top my-2">
+        <div class="row">
+            <div class="col-lg-12">
+                {{ hm | safe }}
+            </div>
+        </div>
+        <h2 class="text-center">Trendline</h2>
+        <div class="border-top my-2"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                {{ lc | safe }}
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <a href="{{ (url_for('index')) }}" class="btn btn-warning center">Try Another TV Show</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

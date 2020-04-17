@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} TV Series Rating Heatmap {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <Style>
+        html, body {
+            height: 100%;
+        }
+
+        .container {
+            height: 80%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+    </Style>
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <img src="https://gifimage.net/wp-content/uploads/2018/06/watch-tv-gif-3.gif">
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-lg-12">
+                <h3 class="text-uppercase font-weight-bold">Pick a TV Show to see a detailed analysis</h3>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-lg-12 my-auto text-center">
+                <form method="post" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.option(class='form-control') }}
+                    </div>
+
+                    <button type="submit" id="sub" class="btn btn-warning center">Submit</button>
+                </form>
+{#                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif"#}
+{#                     id="img" style="display:none"/ >#}
+
+                <img src="https://www.premierhealth.com/Content/images/loading.gif" id="img" style="display:none"/ >
+
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-lg-12">
+                <i class="fa fa-github"> </i> Complete Code on Github
+                <p id="comment" class="text-secondary" style=" display:none">
+                    This webapp is hosted on a student budget. It might take more than a few seconds. Please hold your horses.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+
+    <script>
+        $('#sub').click(function () {
+            $('#img').show();
+            $('#comment').css('display', 'block');
+        });
+    </script>
+{% endblock %}

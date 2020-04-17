@@ -1,0 +1,85 @@
+{% block doc -%}
+    <!DOCTYPE html>
+    <html lang="en">
+    {%- block html %}
+        <head>
+            {%- block head %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158815873-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158815873-1');
+</script>
+
+<link rel='icon' href="{{ url_for('static', filename='favicon.ico')}}" type='image/x-icon'/ >
+                <title>{% block title %}{{ title|default }}{% endblock title %}</title>
+
+                {%- block metas %}
+                    <!-- Required meta tags -->
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                {%- endblock metas %}
+
+                {%- block styles %}
+                    <!-- Bootstrap CSS -->
+                    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+                          rel="stylesheet"
+                          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+                          crossorigin="anonymous">
+                    <link rel="stylesheet"
+                          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                          crossorigin="anonymous">
+                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                {%- endblock styles %}
+            {%- endblock head %}
+        </head>
+        <body{% block body_attribs %}{% endblock body_attribs %}>
+        {% block body -%}
+            {% block navbar %}
+
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+                    <a class="navbar-brand" href="{{ (url_for('index')) }}">TV Show Analyser</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+
+                        </ul>
+
+                            <a class="navbar-brand" href="https://dataiszen.com">Blog</a>
+
+                    </div>
+                </nav>
+
+
+            {%- endblock navbar %}
+            {% block content -%}
+            {%- endblock content %}
+
+            {% block scripts %}
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                        crossorigin="anonymous"></script>
+
+            {%- endblock scripts %}
+        {%- endblock body %}
+        </body>
+    {%- endblock html %}
+    </html>
+{% endblock doc -%}
