@@ -1,5 +1,5 @@
 # TV Show
-A an app to display insights for a tv show such as heatmap, trend line, best episode, worst episode etc. Have suggestion? Let me know
+An app to display insights for a tv show such as heatmap, trend line, best episode, worst episode etc. Have suggestion? Let me know
 
 # Libraries Used
 
