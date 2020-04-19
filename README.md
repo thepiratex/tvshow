@@ -3,4 +3,6 @@ A flask app using plotly, imdb api, python to display insights on various tv sho
 
 [Detailed Documentation to be updated soon]
 
-![GitHub Logo](https://imgur.com/ocxdoPx)
+![Demo_Image_1](https://i.imgur.com/ocxdoPx.png)
+![Demo_Image_1](https://i.imgur.com/MrFoHSC.png)
+![Demo_Image_1](https://i.imgur.com/AgH6PFt.png)
