@@ -1,5 +1,5 @@
-# tvshow
-A flask app using plotly, imdb api, python to display insights on various tv shows
+# TV Show
+A an app to display insights for a tv show such as heatmap, trend line, best episode, worst episode etc. Have suggestion? Let me know
 
 # Libraries Used
 
@@ -14,9 +14,12 @@ A visualization library for python which supports both python and javascript.
 
 # [Live App](https://dataiszen.com/app/tvshow)
 
-
-
 # Screenshots of the app
 ![Demo_Image_1](https://i.imgur.com/ocxdoPx.png)
 ![Demo_Image_1](https://i.imgur.com/MrFoHSC.png)
 ![Demo_Image_1](https://i.imgur.com/AgH6PFt.png)
+
+
+## Bottleneck
+IMDBPY api primarily takes the majority of time in retrieving the data but hey, it's a free service and provides everything for free. Donate a little there if possible.
+
