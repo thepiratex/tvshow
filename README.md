@@ -12,7 +12,7 @@ A microframework to basically connect our python code with web interface.
 * [Plot.Ly](https://plot.ly/python)
 A visualization library for python which supports both python and javascript.  
 
-# [Live App](https://dataiszen.com/app/tvshow)
+### [Click here to check the Live App](https://dataiszen.com/app/tvshow)
 
 # Screenshots of the app
 ![Demo_Image_1](https://i.imgur.com/ocxdoPx.png)
