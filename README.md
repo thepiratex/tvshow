@@ -23,3 +23,4 @@ A visualization library for python which supports both python and javascript.
 ## Bottleneck
 IMDBPY api primarily takes the majority of time in retrieving the data but hey, it's a free service and provides everything for free. Donate a little there if possible.
 
+#### A better UI & faster version developed by [Ian](https://github.com/ianthekid) can be found [here](https://github.com/ianthekid/tvcharts) 
