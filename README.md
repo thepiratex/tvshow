@@ -28,4 +28,6 @@ I built this as a way of displaying my technical abilities to companies looking 
 
 [LinkedIn](https://www.linkedin.com/in/shantam/)
 
-#### A better UI & faster version developed by [Ian](https://github.com/ianthekid) can be found [here](https://tvchart.ianray.com/) with the full [code here](https://github.com/ianthekid/tvcharts) 
+## Looking for more?
+
+A better UI & faster version developed by [Ian](https://github.com/ianthekid) can be found [here](https://tvchart.ianray.com/) with the full [code here](https://github.com/ianthekid/tvcharts) 
