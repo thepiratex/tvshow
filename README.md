@@ -1,7 +1,7 @@
 # TV Show
 An app to display insights for a tv show such as heatmap, trend line, best episode, worst episode etc. Have suggestion? Let me know
 
-# Libraries Used
+## Libraries Used
 
 * [IMDBPY](https://imdbpy.readthedocs.io/en/latest/)
 To pull ratings, name, and other information for all the tv shows from IMDB
@@ -14,7 +14,7 @@ A visualization library for python which supports both python and javascript.
 
 ### [Click here to check the Live App](https://dataiszen.com/app/tvshow)
 
-# Screenshots of the app
+## Screenshots of the app
 ![Demo_Image_1](https://i.imgur.com/ocxdoPx.png)
 ![Demo_Image_1](https://i.imgur.com/MrFoHSC.png)
 ![Demo_Image_1](https://i.imgur.com/AgH6PFt.png)
