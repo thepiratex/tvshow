@@ -26,8 +26,6 @@ IMDBPY api primarily takes the majority of time in retrieving the data but hey, 
 ## Author
 I built this as a way of displaying my technical abilities to companies looking to hire a data analyst with a curious mindset
 
-[LinkedIn](https://www.linkedin.com/in/shantam/)
-
 ## Looking for more?
 
 A better UI & faster version developed by [Ian](https://github.com/ianthekid) can be found [here](https://tvchart.ianray.com/) with the full [code here](https://github.com/ianthekid/tvcharts) 
